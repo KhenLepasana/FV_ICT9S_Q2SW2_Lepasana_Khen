@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://ideogram.ai/assets/image/lossless/response/SzKd7YJYRtWaElxcUKRjXA" alt="Robotics Logo" class="logo">
+
+        <h1 class="title">Robotics Club Registration</h1>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Preferred Robotics Topics</label><br>
+                <input type="checkbox" id="programming"> Programming<br>
+                <input type="checkbox" id="electronics"> Electronics<br>
+                <input type="checkbox" id="mechanical"> Mechanical Design<br>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Robotics Experience Level</label><br>
+                <input type="radio" name="experience" id="beginner" value="Beginner"> Beginner<br>
+                <input type="radio" name="experience" id="intermediate" value="Intermediate"> Intermediate<br>
+                <input type="radio" name="experience" id="advanced" value="Advanced"> Advanced<br>
+            </div>
+
+            <div class="mb-3">
+                <label for="project" class="form-label">Preferred Robotics Project</label>
+                <select class="form-select" id="project" required>
+                    <option selected disabled>Select a project...</option>
+                    <option value="1">AI Detector</option>
+                    <option value="2">AI Generator</option>
+                    <option value="3">AI Assistant</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="statement" class="form-label">Statement of Interest</label>
+                <textarea class="form-control" id="statement" rows="3" placeholder="Why do you want to join?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
